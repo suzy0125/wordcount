@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="text-align: center">
+        <h2><b><img src="https://i.pinimg.com/originals/7c/96/35/7c9635dc427428ffdef939b23c99c886.gif"
+            width="100px">글자수 세기 사이트 <img src="https://i.pinimg.com/originals/7c/96/35/7c9635dc427428ffdef939b23c99c886.gif"
+                width="100px"></b></h2>
+        <div class="jumbotron">
+            <a href="{% url 'about'%}">About</a>
+            <form action="{% url 'result'%}">
+                <textarea cols="100" rows="10" name="fulltext"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="count" class="btn btn-primary btn-lg" href="#" role="button">
+            </form>
+        </div>
+    </div>
+</body>
